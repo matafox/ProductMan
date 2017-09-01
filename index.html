@@ -2,49 +2,78 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Start</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="description" content="" />
-	<link rel="icon" href="favicon.png"/>
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/layout.css" />
-	<link rel="stylesheet" href="css/style.css" />
-
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<title>Productman</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600i,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
-	<div class="pm-intro">
-		<header class="pm-header pm-container cf">
-			<a href="#" class="pm-float-left pm-logo">ProductMan</a>
-			<nav class="pm-float-right">
-				<ul class="pm-menu">
+	<header class="page-header">
+		<div class="wrap-header">
+			<a class="banner" href="#">ProductMan</a>
+			<nav>
+				<ul>
 					<li><a href="#">Recent Work</a></li>
 					<li><a href="#">Featured Product</a></li>
+					<li><a href="#"><span class="hamburger"></span></a></li>
 				</ul>
 			</nav>
-		</header>
-	</div>
-	<div class="pm-container cf">
-		<div class="pm-float-left pm-black-text">
-			<h2>Black&<br>
-				White</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores ea magnam nam odio optio quibusdam similique, vel. Aliquid, quae, voluptatum? Cupiditate expedita necessitatibus quo.</p>
-			<a href="#" class="pm-button">View Project</a>
 		</div>
-		<div class="pm-float-right pm-black-image">
-			<img src="img/headphones.png" alt="headphones">
-		</div>
-	</div>
-	<main>
-
+	</header>
+	<main class="page-content">
+		<section class="black-white">
+			<div class="wrap-bw">
+				<div class="column-bw">
+					<h2>Black&amp;<br>White</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<a href="#">View Project</a>
+				</div>
+				<img src="images/headphones.png" alt="headphones">
+				<ul>
+					<li class="active-circle"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+		<section class="feat-prod">
+			<div class="wrap-prod">
+				<h3>Featured Product</h3>
+				<img src="images/star.png" alt="star">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a href="#"><img class="content" src="images/dynamics.png" alt="dynamics"></a><!--
+				 --><a href="#"><img class="content" src="images/headphones-red.png" alt="headphones-red"></a><!--
+				--><a href="#" class="design">
+				<span>Minimal Product<br>Design</span>
+				</a><!--
+				 --><a href="#"><img class="content" src="images/shoes.png" alt="shoes"></a><!--
+				--><a href="#"><img class="content" src="images/chair.png" alt="chair"></a>
+			</div>
+		</section>
+		<section class="news">
+				<h3>productman news</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<form action="#">
+					<input type="text" placeholder="Enter your email address"><!--
+					 --><label><input type="button" value="Subscribe"></label>
+				</form>
+		</section>
 	</main>
-	<footer class="pm-footer">
-
+	<footer class="page-footer">
+		<ul>
+			<li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li><!--
+			 --><li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li><!--
+			 --><li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li><!--
+			 --><li><a href="#"><img src="images/bigm.png" alt="bigm"></a></li>
+		</ul>
+		<h4>© Copyright <a href="#">Your Company</a> ltd 2016. All Rights Reserved.</h4>
 	</footer>
 </body>
 </html>

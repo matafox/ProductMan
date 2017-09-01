@@ -1,135 +1,321 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900');
-
-body{
-	font: 300 24px/1.5 'Raleway', sans-serif;
-	color:#303030;
-	background: #eeeeee;
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	line-height: 1.5em;
+	color: #303030;
+	letter-spacing: 0.025em;
+	background-color: #EEEEEE;
 }
-
-/* Typography */
-a,
-input[type="submit"],
-input[type="button"],
-button{
-	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+/* style for header */
+.page-header {
+	vertical-align: middle;
 }
-input[type="submit"],
-input[type="button"],
-button,
-.pm-button{
+.page-header a:hover {
+	color: #E10011;
+}
+.page-header .banner {
+	font-size: 48px;
+	line-height: 1em;
+	font-weight: 900;
+	margin-top: 50px;
+	width: 49%;
+	color: #303030;
+	text-decoration: none;
 	display: inline-block;
 }
-input[type="submit"]:hover,
-input[type="button"]:hover,
-button:hover,
-.pm-button:hover{
-
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-textarea,
-select {
-
-	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-textarea:focus,
-select:focus {
-
-}
-textarea {
-
-}
-
-/* Layout */
-.pm-container{
-	padding-left: 20px;
-	padding-right: 20px;
+.wrap-header {
+	margin: 0 auto;
 	max-width: 1200px;
 }
-
-.pm-menu {
-	margin-top: 20px;
-	list-style: none;
-}
-
-@media (max-width: 997px) {
-	.pm-menu {
-		display: none;
-	}
-}
-
-.pm-menu li {
-	float: left;
-	margin-left: 50px;
-}
-
-.pm-menu a {
-	color: #303030;
-	font-size: 18px;
-	font-weight: 400;
-	text-align: left;
-	padding: 10px;
-}
-
-.pm-logo {
-	color: #303030;
-	font-size: 48px;
-	font-weight: 900;
-	text-decoration: none;
-}
-
-.pm-intro a {
-	font-family: 'Roboto', sans-serif;
-}
-
-a {
-	text-decoration: none;
-}
-
-.pm-header {
-	padding-top: 50px;
-	padding-bottom: 105px;
-}
-
-.pm-black-image {
-	float: right;
-}
-
-.pm-black-text {
+nav {
+	display: inline-block;
+	width: 50%;
 	text-align: right;
-	width: 60%;
 }
+nav ul {
+	padding: 0;
+}
+nav ul li {
+	display: inline-block;
+	text-decoration: none;
+}
+nav ul li+li {
+	margin-left: 45px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #303030;
+	position: relative;
+}
+.hamburger {
+	width: 16px;
+	height: 3px;
+	background-color: #303030;
+	display: inline-block;
+}
+.hamburger:before {
+	content: '';
+	width: 16px;
+	height: 3px;
+	background-color: #303030;
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+.hamburger:after {
+	content: '';
+	width: 16px;
+	height: 3px;
+	background-color: #303030;
+	display: inline-block;
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.hamburger:after :hover,
+.hamburger:hover {
+	background-color: #E10011;
+}
+/* end style for header */
 
-.pm-black-text h2 {
+/* style for main */
+/* style for black-white */
+.black-white {
+	padding-bottom: 100px;
+}
+.wrap-bw {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 105px;
+}
+.column-bw {
+	max-width: 615px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	margin-left: -24px;
+	margin-right: 105px;
+}
+.column-bw h2 {
+	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	font-size: 150px;
+	line-height: 1em;
 	font-weight: 900;
-	line-height: 1;
-	text-align: right;
-	text-transform: uppercase;
 }
-
-.pm-button {
+.column-bw p {
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+.column-bw a {
+	color: #e10011;
 	text-decoration: none;
-	color: red;
-	text-align: right;
+	font-weight: 700;
 }
+.wrap-bw ul {
+	text-align: center;
+	margin: 83px 40px 0 0;
+	padding: 0;
+}
+.wrap-bw ul li {
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #303030;
+	width: 12px;
+	height: 12px;
+}
+.wrap-bw ul li.active-circle {
+	background-color: #E10011;
+}
+.wrap-bw ul li:hover {
+	cursor: pointer;
+	background-color: #E10011;
+}
+/* end style for black-white */
+/* style for feat-prod */
+.feat-prod {
+	text-align: center;
+}
+.wrap-prod {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #FFF;
+	border-radius: 5px;
+	padding-bottom: 72px;
+}
+.wrap-prod span:after {
+	content: '';
+	display: inline-block;
+	background-color: #fff;
+	position: absolute;
+	width: 97px;
+	height: 4px;
+	bottom: -7px;
+	left: 0;
+}
+.wrap-prod h3 {
+	padding-top: 115px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 1em;
+	letter-spacing: .025em;
+}
+.wrap-prod p {
+	max-width: 711px;
+	margin: 0 auto;
+	margin-bottom: 53px;
+}
+.wrap-prod .design:hover,
+.wrap-prod img:hover {
+	box-shadow: 0px 4px 68px 0px rgba(0, 0, 0, 0.1);
+}
+.wrap-prod .content {
+	margin: 12px 17.5px;
+}
+.design {
+	margin: 12px 17.5px;
+	display: inline-block;
+	height: 390px;
+	width: 330px;
+	border-radius: 5px;
+	background-color: #E10011;
+	position: relative;
+}
+.design span {
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1.5em;
+	color: #FFF;
+	display: inline-block;
+	position: absolute;
+	left: 40px;
+	top: 265px;
+	text-align: left;
+	margin: 0;
+}
+/* end style for feat-prod */
+/* style for news */
+.news {
+	text-align: center;
+}
+.news h3 {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	line-height: 1.3em;
+	letter-spacing: 0.025em;
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+.news p {
+	max-width: 585px;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 1.3em;
+	letter-spacing: 0.025em;
+	margin-top: 30px;
+}
+.news form {
+	margin-top: 42px;
+}
+form input[type=text] {
+	height: 70px;
+	width: 500px;
 
-.pm-black-text a:hover {
-	text-decoration: underline;
+	background-image: url(../images/mail.png);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	padding-left: 65px;
+	border: none;
+	color: #979797;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 700;
+	outline: none;
 }
+form input[type=button] {
+	height: 70px;
+	width: 210px;
+
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	background-color: #E10011;
+	border: none;
+	color: #FFF;
+	outline: none;
+}
+form input[type=button]:hover {
+	cursor: pointer;
+	background-color: #303030;
+}
+label:after {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
+	border-color: transparent transparent transparent #ffffff;
+	margin-left: -48px;
+}
+/* end style for news */
+/* end style for main */
+
+/* style for footer */
+.page-footer {
+	margin-top: 110px;
+	text-align: center;
+	vertical-align: middle;
+
+}
+.page-footer ul li a {
+	background-color: #FFF;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+}
+.page-footer ul li {
+	display: inline-block;
+	height: 75px;
+	position: relative;
+}
+.page-footer ul li a:hover {
+	background-color: #303030;
+}
+.page-footer ul li + li {
+	margin-left: 16px;
+}
+.page-footer ul li img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+.page-footer h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #979797;
+	margin-top: 65px;
+	margin-bottom: 30px;
+}
+.page-footer h4 a {
+	color: #303030;
+	text-decoration: none;
+}
+/* end style for footer */
